@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0F1E;
+  --surface-1: #111827;
+  --surface-2: #1F2937;
+  --surface-3: #374151;
+  --border: #1F2937;
+  --border-strong: #374151;
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --primary-subtle: #1E3A5F;
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-tertiary: #6B7280;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #06B6D4;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.blob {
+  animation: drift 18s ease-in-out infinite;
+}
